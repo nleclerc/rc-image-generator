@@ -332,4 +332,210 @@
 			}
 		}]
 	}]
+},{
+	"type": "visioapero",
+	"name": "Visio Apero",
+	"images": [{
+		"file": "date-example.png",
+		"file": "date.png",
+		"format": "png",
+		"texts": [{
+			"type": "date",
+			"format": "ddd D",
+			"color": "#db3e49",
+			"font": "28px arial",
+			"capitalize": true,
+			"position": {
+				"x": 143,
+				"y": 70
+			}
+		},{
+			"type": "date",
+			"format": "MMM",
+			"color": "#005caf",
+			"font": "40px arial",
+			"allcaps": true,
+			"position": {
+				"x": 143,
+				"y": 110
+			}
+		},{
+			"type": "text",
+			"value": "à partir de",
+			"color": "#db3e49",
+			"font": "20px arial",
+			"position": {
+				"x": 143,
+				"y": 134
+			}
+		},{
+			"type": "fullstarttime",
+			"color": "#db3e49",
+			"font": "30px arial",
+			"position": {
+				"x": 143,
+				"y": 164
+			}
+		}]
+	},{
+		"file": "insta-example.jpg",
+		"file": "insta.png",
+		"texts": [{
+			"type": "date",
+			"format": "ddd D",
+			"color": "#db3e49",
+			"font": "65px arial",
+			"capitalize": true,
+			"position": {
+				"x": 348,
+				"y": 426
+			}
+		},{
+			"type": "date",
+			"format": "MMM",
+			"color": "#005caf",
+			"font": "110px arial",
+			"allcaps": true,
+			"position": {
+				"x": 348,
+				"y": 529
+			}
+		},{
+			"type": "text",
+			"value": "à partir de",
+			"color": "#db3e49",
+			"font": "67px arial",
+			"position": {
+				"x": 348,
+				"y": 594
+			}
+		},{
+			"type": "fullstarttime",
+			"color": "#db3e49",
+			"font": "65px arial",
+			"position": {
+				"x": 348,
+				"y": 672
+			}
+		},{
+			"type": "number",
+			"color": "#d64248",
+			"font": "76px arial",
+			"position": {
+				"x": 554,
+				"y": 268
+			}
+		}]
+	},{
+		"file": "insta-story-example.jpg",
+		"file": "insta-story.png",
+		"texts": [{
+			"type": "date",
+			"format": "ddd D",
+			"color": "#db3e49",
+			"font": "100px arial",
+			"capitalize": true,
+			"position": {
+				"x": 552,
+				"y": 1070
+			}
+		},{
+			"type": "date",
+			"format": "MMM",
+			"color": "#005caf",
+			"font": "160px arial",
+			"allcaps": true,
+			"position": {
+				"x": 552,
+				"y": 1233
+			}
+		},{
+			"type": "text",
+			"value": "à partir de",
+			"color": "#db3e49",
+			"font": "100px arial",
+			"position": {
+				"x": 552,
+				"y": 1332
+			}
+		},{
+			"type": "fullstarttime",
+			"color": "#db3e49",
+			"font": "100px arial",
+			"position": {
+				"x": 552,
+				"y": 1447
+			}
+		},{
+			"type": "number",
+			"color": "#d64248",
+			"font": "123px arial",
+			"position": {
+				"x": 872,
+				"y": 822
+			}
+		}]
+	},{
+		"file": "titre-diapo-example.png",
+		"file": "titre-diapo.png",
+		"format": "png",
+		"texts": [{
+			"type": "number",
+			"color": "#d64248",
+			"font": "34px arial",
+			"position": {
+				"x": 212,
+				"y": 104
+			}
+		}]
+	},{
+		"file": "visuel-example.jpg",
+		"file": "visuel.png",
+		"texts": [{
+			"type": "date",
+			"format": "ddd D",
+			"color": "#db3e49",
+			"font": "113px arial",
+			"capitalize": true,
+			"position": {
+				"x": 1192,
+				"y": 788
+			}
+		},{
+			"type": "date",
+			"format": "MMM",
+			"color": "#005caf",
+			"font": "180px arial",
+			"allcaps": true,
+			"position": {
+				"x": 1192,
+				"y": 971
+			}
+		},{
+			"type": "text",
+			"value": "à partir de",
+			"color": "#db3e49",
+			"font": "100px arial",
+			"position": {
+				"x": 1192,
+				"y": 1073
+			}
+		},{
+			"type": "fullstarttime",
+			"color": "#db3e49",
+			"font": "100px arial",
+			"position": {
+				"x": 1192,
+				"y": 1193
+			}
+		},{
+			"type": "number",
+			"color": "#d64248",
+			"font": "147px arial",
+			"position": {
+				"x": 1585,
+				"y": 502
+			}
+		}]
+	}]
 }]

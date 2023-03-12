@@ -25,6 +25,7 @@ const FORMATS = {
 	const dateSelector = document.querySelector('#dateSelector')
 	const startTimeInput = document.querySelector('#startTimeInput')
 	const endTimeInput = document.querySelector('#endTimeInput')
+	const numberInput = document.querySelector('#numberInput')
 
 	const generateButton = document.querySelector('#generateButton')
 
@@ -55,15 +56,16 @@ const FORMATS = {
 		const eventDate = moment(dateSelector.value)
 		const startTime = startTimeInput.value
 		const endTime = endTimeInput.value
-		await generateImages(eventMap[typeSelector.value],eventDate,startTime,endTime)
+		const number = numberInput.value
+		await generateImages(eventMap[typeSelector.value],eventDate,startTime,endTime,number)
 	})
 })()
 
-async function generateImages(eventData,eventDate,startTime,endTime) {
+async function generateImages(eventData,eventDate,startTime,endTime,number) {
 	console.log('Generating images for:',eventData.type)
 
 	for (const image of eventData.images) {
-		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,image)
+		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,image,number)
 
 		if (isTestMode()) {
 			document.querySelector('#result').src = canvas.toDataURL()
@@ -74,8 +76,8 @@ async function generateImages(eventData,eventDate,startTime,endTime) {
 	}
 }
 
-async function generateImage(eventType,eventDate,startTime,endTime,imageData) {
-	console.log('Generating image:',eventType,eventDate,startTime,endTime,imageData)
+async function generateImage(eventType,eventDate,startTime,endTime,imageData,number) {
+	console.log('Generating image:',eventType,eventDate,startTime,endTime,number,imageData)
 	const img = await loadImage(`data/${eventType}/${imageData.file}`)
 	console.debug('Image loaded:',img,img.width,img.height)
 
@@ -121,9 +123,24 @@ async function generateImage(eventType,eventDate,startTime,endTime,imageData) {
 				textValue = `de ${startTime.substring(0,2)}h à ${endTime.substring(0,2)}h`
 				break
 
+			case 'fullstarttime':
+				console.debug('Processing fullstarttime:',text)
+				textValue = startTime.replace(':','h')
+				break
+
 			case 'fulldateandtimes':
 				console.debug('Processing fulldateandtimes:',text)
 				textValue = `${eventDate.format('dddd D MMMM')} de ${startTime.substring(0,2)}h à ${endTime.substring(0,2)}h`
+				break
+
+			case 'text':
+				console.debug('Processing text:',text)
+				textValue = text.value
+				break
+
+			case 'number':
+				console.debug('Processing number:',text)
+				textValue = `#${number}`
 				break
 
 			default:
