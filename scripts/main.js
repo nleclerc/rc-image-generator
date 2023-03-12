@@ -1,9 +1,9 @@
 
 const FORMATS = {
 	jpg: {
-		mimeType: 'image/jpg',
+		mimeType: 'image/jpeg',
 		ext: 'jpg',
-		quality: .8
+		quality: .9
 	},
 	png: {
 		mimeType: 'image/png',
@@ -109,6 +109,7 @@ function downloadCanvasImage(canvas,name,type='jpg') {
 	console.log('Downloading image:',canvas,name,type)
 	const format = FORMATS[type]
 	console.debug('Using format:',format)
+	//console.debug('Data:',canvas.toDataURL(format.mimeType,format.quality))
 	const imageData = canvas.toDataURL(format.mimeType,format.quality).replace(format.mimeType,'image/octet-stream')
 	const link = document.createElement('a')
 	link.download = `${name}.${format.ext}`
