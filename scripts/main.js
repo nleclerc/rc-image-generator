@@ -42,6 +42,9 @@ const FORMATS = {
 		newOption.value = event.type
 		newOption.text = event.name
 
+		if (document.location.hash == `#${event.type}`)
+			newOption.selected = true
+
 		typeSelector.add(newOption)
 	}
 
@@ -106,6 +109,21 @@ async function generateImage(eventType,eventDate,startTime,endTime,imageData) {
 			case 'endtime':
 				console.debug('Processing endtime:',text)
 				textValue = `${endTime.substring(0,2)}h`
+				break
+
+			case 'fulldate':
+				console.debug('Processing fulldate:',text)
+				textValue = `${eventDate.format('dddd D MMMM')}`
+				break
+
+			case 'fulltimes':
+				console.debug('Processing fulltimes:',text)
+				textValue = `de ${startTime.substring(0,2)}h à ${endTime.substring(0,2)}h`
+				break
+
+			case 'fulldateandtimes':
+				console.debug('Processing fulldateandtimes:',text)
+				textValue = `${eventDate.format('dddd D MMMM')} de ${startTime.substring(0,2)}h à ${endTime.substring(0,2)}h`
 				break
 
 			default:

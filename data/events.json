@@ -132,6 +132,71 @@
 		}]
 	}]
 },{
+	"type": "adopteetalk",
+	"name": "Adoptee Talk",
+	"images": [{
+		"file": "date-example.png",
+		"file": "date.png",
+		"format": "png",
+		"texts": [{
+			"type": "fulldateandtimes",
+			"color": "white",
+			"font": "18px arial",
+			"capitalize": true,
+			"position": {
+				"x": 141,
+				"y": 56
+			}
+		}]
+	},{
+		"file": "base-example.jpg",
+		"file": "base.png",
+		"texts": [{
+			"type": "fulldateandtimes",
+			"color": "white",
+			"font": "18px arial",
+			"capitalize": true,
+			"position": {
+				"x": 162,
+				"y": 75
+			}
+		}]
+	},{
+		"file": "insta-example.jpg",
+		"file": "insta.png",
+		"texts": [{
+			"type": "fulldateandtimes",
+			"color": "white",
+			"font": "40px arial",
+			"capitalize": true,
+			"position": {
+				"x": 349,
+				"y": 162
+			}
+		}]
+	},{
+		"file": "insta-story-example.jpg",
+		"file": "insta-story.png",
+		"texts": [{
+			"type": "fulldate",
+			"color": "white",
+			"font": "64px arial",
+			"capitalize": true,
+			"position": {
+				"x": 400,
+				"y": 393
+			}
+		},{
+			"type": "fulltimes",
+			"color": "white",
+			"font": "64px arial",
+			"position": {
+				"x": 400,
+				"y": 461
+			}
+		}]
+	}]
+},{
 	"type": "yogaclass",
 	"name": "Yoga Class",
 	"images": [{
