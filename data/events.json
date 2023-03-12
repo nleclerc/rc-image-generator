@@ -1,0 +1,137 @@
+[{
+	"type": "yogaclass",
+	"name": "Yoga Class",
+	"images": [{
+		"file": "date-square-example.jpg",
+		"file": "date-square.png",
+		"texts": [{
+			"type": "date",
+			"format": "ddd D",
+			"color": "#db3e49",
+			"font": "46px arial",
+			"capitalize": true,
+			"position": {
+				"x": 127,
+				"y": 66
+			}
+		},{
+			"type": "date",
+			"format": "MMM",
+			"color": "#005caf",
+			"font": "72px arial",
+			"allcaps": true,
+			"position": {
+				"x": 127,
+				"y": 145
+			}
+		},{
+			"type": "startendtime",
+			"color": "#db3e49",
+			"font": "38px arial",
+			"allcaps": true,
+			"position": {
+				"x": 127,
+				"y": 200
+			}
+		}]
+	},{
+		"file": "insta-example.jpg",
+		"file": "insta.png",
+		"texts": [{
+			"type": "date",
+			"format": "ddd D",
+			"color": "#db3e49",
+			"font": "53px arial",
+			"capitalize": true,
+			"position": {
+				"x": 352,
+				"y": 493
+			}
+		},{
+			"type": "date",
+			"format": "MMM",
+			"color": "#005caf",
+			"font": "80px arial",
+			"allcaps": true,
+			"position": {
+				"x": 352,
+				"y": 580
+			}
+		},{
+			"type": "startendtime",
+			"color": "#db3e49",
+			"font": "40px arial",
+			"allcaps": true,
+			"position": {
+				"x": 352,
+				"y": 640
+			}
+		}]
+	},{
+		"file": "insta-story-example.jpg",
+		"file": "insta-story.png",
+		"texts": [{
+			"type": "date",
+			"format": "ddd D",
+			"color": "#db3e49",
+			"font": "89px arial",
+			"capitalize": true,
+			"position": {
+				"x": 543,
+				"y": 834
+			}
+		},{
+			"type": "date",
+			"format": "MMM",
+			"color": "#005caf",
+			"font": "134px arial",
+			"allcaps": true,
+			"position": {
+				"x": 543,
+				"y": 979
+			}
+		},{
+			"type": "startendtime",
+			"color": "#db3e49",
+			"font": "68px arial",
+			"allcaps": true,
+			"position": {
+				"x": 543,
+				"y": 1082
+			}
+		}]
+	},{
+		"file": "base-example.jpg",
+		"file": "base.png",
+		"texts": [{
+			"type": "date",
+			"format": "ddd D",
+			"color": "#db3e49",
+			"font": "22px arial",
+			"capitalize": true,
+			"position": {
+				"x": 139,
+				"y": 204
+			}
+		},{
+			"type": "date",
+			"format": "MMM",
+			"color": "#005caf",
+			"font": "35px arial",
+			"allcaps": true,
+			"position": {
+				"x": 139,
+				"y": 242
+			}
+		},{
+			"type": "startendtime",
+			"color": "#db3e49",
+			"font": "19px arial",
+			"allcaps": true,
+			"position": {
+				"x": 139,
+				"y": 270
+			}
+		}]
+	}]
+}]

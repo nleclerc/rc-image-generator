@@ -1,0 +1,26 @@
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar {
+	flex: 0 0 auto;
+	box-shadow: 0 .2rem .4rem rgba(0,0,0,.2);
+	background-color: #ffdcae;
+	background: linear-gradient(10deg, rgba(250,161,255,1) 0%, rgba(184,255,144,1) 100%);
+}
+
+#mainContainer {
+	flex: 1 1 auto;
+	height: 0; /* prevent possible height issues. */
+	padding-top: 1em;
+}
+
+#result {
+	margin-top: 1em;
+}
