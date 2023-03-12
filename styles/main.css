@@ -23,4 +23,6 @@ body {
 
 #result {
 	margin-top: 1em;
+	display: block;
+	width: auto;
 }

@@ -28,6 +28,12 @@ const FORMATS = {
 
 	const generateButton = document.querySelector('#generateButton')
 
+	if (isTestMode()) {
+		const resultImg = document.createElement('img')
+		resultImg.id = 'result'
+		document.querySelector('#mainContainer > .container').append(resultImg)
+	}
+
 	const eventMap = {}
 	for (const event of events) {
 		console.debug('Processing event:',event)
@@ -55,7 +61,13 @@ async function generateImages(eventData,eventDate,startTime,endTime) {
 
 	for (const image of eventData.images) {
 		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,image)
-		downloadCanvasImage(canvas,`${eventDate.format('YYYY-MM-DD')}-${eventData.type}-${image.file.replace(/\.[^.]+$/,'')}`)
+
+		if (isTestMode()) {
+			document.querySelector('#result').src = canvas.toDataURL()
+		} else {
+			const filename = `${eventDate.format('YYYY-MM-DD')}-${eventData.type}-${image.file.replace(/\.[^.]+$/,'')}`
+			downloadCanvasImage(canvas,filename,image.format)
+		}
 	}
 }
 
@@ -86,6 +98,16 @@ async function generateImage(eventType,eventDate,startTime,endTime,imageData) {
 				textValue = `${startTime.substring(0,2)}h - ${endTime.substring(0,2)}h`
 				break
 
+			case 'starttime':
+				console.debug('Processing starttime:',text)
+				textValue = `${startTime.substring(0,2)}h`
+				break
+
+			case 'endtime':
+				console.debug('Processing endtime:',text)
+				textValue = `${endTime.substring(0,2)}h`
+				break
+
 			default:
 				console.error('Invalid text:',text)
 		}
@@ -103,6 +125,10 @@ async function generateImage(eventType,eventDate,startTime,endTime,imageData) {
 	}
 
 	return canvas
+}
+
+function isTestMode() {
+	return document.location.search == '?test'
 }
 
 function downloadCanvasImage(canvas,name,type='jpg') {
