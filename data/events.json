@@ -8,7 +8,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "38px arial",
+			"font": "38px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 529,
@@ -18,7 +18,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "57px arial",
+			"font": "57px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 529,
@@ -27,7 +27,7 @@
 		},{
 			"type": "starttime",
 			"color": "#d64248",
-			"font": "65px arial",
+			"font": "65px helvetica-neue-roman",
 			"position": {
 				"x": 529,
 				"y": 205
@@ -41,7 +41,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "38px arial",
+			"font": "38px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 488,
@@ -51,7 +51,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "57px arial",
+			"font": "57px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 488,
@@ -60,7 +60,7 @@
 		},{
 			"type": "starttime",
 			"color": "#d64248",
-			"font": "65px arial",
+			"font": "65px helvetica-neue-roman",
 			"position": {
 				"x": 488,
 				"y": 184
@@ -73,7 +73,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "38px arial",
+			"font": "38px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 541,
@@ -83,7 +83,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "57px arial",
+			"font": "57px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 541,
@@ -92,7 +92,7 @@
 		},{
 			"type": "starttime",
 			"color": "#d64248",
-			"font": "65px arial",
+			"font": "65px helvetica-neue-roman",
 			"position": {
 				"x": 541,
 				"y": 240
@@ -105,7 +105,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "55px arial",
+			"font": "55px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 586,
@@ -115,7 +115,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "65px arial",
+			"font": "65px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 586,
@@ -124,7 +124,7 @@
 		},{
 			"type": "starttime",
 			"color": "#d64248",
-			"font": "83px arial",
+			"font": "83px helvetica-neue-roman",
 			"position": {
 				"x": 586,
 				"y": 306
@@ -141,7 +141,7 @@
 		"texts": [{
 			"type": "fulldateandtimes",
 			"color": "white",
-			"font": "18px arial",
+			"font": "18px prok-light",
 			"capitalize": true,
 			"position": {
 				"x": 141,
@@ -154,7 +154,7 @@
 		"texts": [{
 			"type": "fulldateandtimes",
 			"color": "white",
-			"font": "18px arial",
+			"font": "18px prok-light",
 			"capitalize": true,
 			"position": {
 				"x": 162,
@@ -167,7 +167,7 @@
 		"texts": [{
 			"type": "fulldateandtimes",
 			"color": "white",
-			"font": "40px arial",
+			"font": "40px prok-light",
 			"capitalize": true,
 			"position": {
 				"x": 349,
@@ -180,7 +180,7 @@
 		"texts": [{
 			"type": "fulldate",
 			"color": "white",
-			"font": "64px arial",
+			"font": "64px prok-light",
 			"capitalize": true,
 			"position": {
 				"x": 400,
@@ -189,7 +189,7 @@
 		},{
 			"type": "fulltimes",
 			"color": "white",
-			"font": "64px arial",
+			"font": "64px prok-light",
 			"position": {
 				"x": 400,
 				"y": 461
@@ -343,7 +343,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "28px arial",
+			"font": "28px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 143,
@@ -353,7 +353,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "40px arial",
+			"font": "40px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 143,
@@ -363,7 +363,7 @@
 			"type": "text",
 			"value": "à partir de",
 			"color": "#d64248",
-			"font": "20px arial",
+			"font": "20px helvetica-neue-roman",
 			"position": {
 				"x": 143,
 				"y": 134
@@ -371,7 +371,7 @@
 		},{
 			"type": "fullstarttime",
 			"color": "#d64248",
-			"font": "30px arial",
+			"font": "30px helvetica-neue-roman",
 			"position": {
 				"x": 143,
 				"y": 164
@@ -384,7 +384,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "65px arial",
+			"font": "65px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 348,
@@ -394,7 +394,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "110px arial",
+			"font": "110px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 348,
@@ -404,7 +404,7 @@
 			"type": "text",
 			"value": "à partir de",
 			"color": "#d64248",
-			"font": "67px arial",
+			"font": "67px helvetica-neue-roman",
 			"position": {
 				"x": 348,
 				"y": 594
@@ -412,7 +412,7 @@
 		},{
 			"type": "fullstarttime",
 			"color": "#d64248",
-			"font": "65px arial",
+			"font": "65px helvetica-neue-roman",
 			"position": {
 				"x": 348,
 				"y": 672
@@ -420,7 +420,7 @@
 		},{
 			"type": "number",
 			"color": "#d64248",
-			"font": "76px arial",
+			"font": "76px vcr",
 			"position": {
 				"x": 554,
 				"y": 268
@@ -433,7 +433,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "100px arial",
+			"font": "100px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 552,
@@ -443,7 +443,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "160px arial",
+			"font": "160px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 552,
@@ -453,7 +453,7 @@
 			"type": "text",
 			"value": "à partir de",
 			"color": "#d64248",
-			"font": "100px arial",
+			"font": "100px helvetica-neue-roman",
 			"position": {
 				"x": 552,
 				"y": 1332
@@ -461,7 +461,7 @@
 		},{
 			"type": "fullstarttime",
 			"color": "#d64248",
-			"font": "100px arial",
+			"font": "100px helvetica-neue-roman",
 			"position": {
 				"x": 552,
 				"y": 1447
@@ -469,7 +469,7 @@
 		},{
 			"type": "number",
 			"color": "#d64248",
-			"font": "123px arial",
+			"font": "123px vcr",
 			"position": {
 				"x": 872,
 				"y": 822
@@ -482,7 +482,7 @@
 		"texts": [{
 			"type": "number",
 			"color": "#d64248",
-			"font": "34px arial",
+			"font": "34px vcr",
 			"position": {
 				"x": 212,
 				"y": 104
@@ -495,7 +495,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "113px arial",
+			"font": "113px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 1192,
@@ -505,7 +505,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "180px arial",
+			"font": "180px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 1192,
@@ -515,7 +515,7 @@
 			"type": "text",
 			"value": "à partir de",
 			"color": "#d64248",
-			"font": "100px arial",
+			"font": "100px helvetica-neue-roman",
 			"position": {
 				"x": 1192,
 				"y": 1073
@@ -523,7 +523,7 @@
 		},{
 			"type": "fullstarttime",
 			"color": "#d64248",
-			"font": "100px arial",
+			"font": "100px helvetica-neue-roman",
 			"position": {
 				"x": 1192,
 				"y": 1193
@@ -531,7 +531,7 @@
 		},{
 			"type": "number",
 			"color": "#d64248",
-			"font": "147px arial",
+			"font": "147px vcr",
 			"position": {
 				"x": 1585,
 				"y": 502

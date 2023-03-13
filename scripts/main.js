@@ -12,11 +12,21 @@ const FORMATS = {
 	}
 };
 
+const FONTS = {
+	'prok-light': 'prok-light.otf',
+	'helvetica-neue-roman': 'helvet-roman.ttf',
+	'vcr': 'vcr.ttf'
+};
+
+const loadedFonts = {};
+
 (async ()=> {
 	console.log('Starting...')
 
 	// setting moment locale.
 	moment.locale('fr')
+
+	await loadFonts()
 
 	const events = await loadJson('data/events.json')
 	console.debug('Loaded data:',events)
@@ -60,6 +70,18 @@ const FORMATS = {
 		await generateImages(eventMap[typeSelector.value],eventDate,startTime,endTime,number)
 	})
 })()
+
+async function loadFonts() {
+	console.debug('loading fonts...')
+
+	for (const fontName of Object.keys(FONTS)) {
+		const file = FONTS[fontName]
+		const newFont = new FontFace(fontName,`url(styles/fonts/${file})`)
+		await newFont.load()
+		loadedFonts[fontName] = newFont
+		console.debug('Font loaded:',fontName)
+	}
+}
 
 async function generateImages(eventData,eventDate,startTime,endTime,number) {
 	console.log('Generating images for:',eventData.type)

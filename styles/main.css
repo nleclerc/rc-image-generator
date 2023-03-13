@@ -26,3 +26,18 @@ body {
 	display: block;
 	width: auto;
 }
+
+@font-face {
+	font-family: 'prok-light';
+	src: url('fonts/prok-light.otf');
+}
+
+@font-face {
+	font-family: 'helvetica-neue-roman';
+	src: url('fonts/helvet-roman.ttf');
+}
+
+@font-face {
+	font-family: 'vcr';
+	src: url('fonts/vcr.ttf');
+}
