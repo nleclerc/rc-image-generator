@@ -30,7 +30,7 @@
 			"font": "65px helvetica-neue-roman",
 			"position": {
 				"x": 529,
-				"y": 205
+				"y": 204
 			}
 		}]
 	},{
@@ -45,13 +45,13 @@
 			"capitalize": true,
 			"position": {
 				"x": 488,
-				"y": 53
+				"y": 56
 			}
 		},{
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "57px helvetica-neue-roman",
+			"font": "54px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 488,
@@ -73,7 +73,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "38px helvetica-neue-roman",
+			"font": "40px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 541,
@@ -83,7 +83,7 @@
 			"type": "date",
 			"format": "MMM",
 			"color": "#005eac",
-			"font": "57px helvetica-neue-roman",
+			"font": "55px helvetica-neue-roman",
 			"allcaps": true,
 			"position": {
 				"x": 541,
@@ -105,7 +105,7 @@
 			"type": "date",
 			"format": "ddd D",
 			"color": "#d64248",
-			"font": "55px helvetica-neue-roman",
+			"font": "56px helvetica-neue-roman",
 			"capitalize": true,
 			"position": {
 				"x": 586,
@@ -127,7 +127,7 @@
 			"font": "83px helvetica-neue-roman",
 			"position": {
 				"x": 586,
-				"y": 306
+				"y": 305
 			}
 		}]
 	}]
@@ -415,15 +415,15 @@
 			"font": "65px helvetica-neue-roman",
 			"position": {
 				"x": 348,
-				"y": 672
+				"y": 670
 			}
 		},{
 			"type": "number",
 			"color": "#d64248",
-			"font": "76px vcr",
+			"font": "82px vcr",
 			"position": {
 				"x": 554,
-				"y": 268
+				"y": 272
 			}
 		}]
 	},{
@@ -469,10 +469,10 @@
 		},{
 			"type": "number",
 			"color": "#d64248",
-			"font": "123px vcr",
+			"font": "128px vcr",
 			"position": {
 				"x": 872,
-				"y": 822
+				"y": 828
 			}
 		}]
 	},{
@@ -482,10 +482,10 @@
 		"texts": [{
 			"type": "number",
 			"color": "#d64248",
-			"font": "34px vcr",
+			"font": "35px vcr",
 			"position": {
 				"x": 212,
-				"y": 104
+				"y": 106
 			}
 		}]
 	},{
@@ -531,10 +531,10 @@
 		},{
 			"type": "number",
 			"color": "#d64248",
-			"font": "147px vcr",
+			"font": "155px vcr",
 			"position": {
 				"x": 1585,
-				"y": 502
+				"y": 510
 			}
 		}]
 	}]
