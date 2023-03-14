@@ -1,4 +1,6 @@
 
+const TEST_MODE_REGEX = /test=(\d+)/
+
 const FORMATS = {
 	jpg: {
 		mimeType: 'image/jpeg',
@@ -86,15 +88,23 @@ async function loadFonts() {
 async function generateImages(eventData,eventDate,startTime,endTime,number) {
 	console.log('Generating images for:',eventData.type)
 
+	if (isTestMode()) {
+		const imageIndex = getTestModeIndex()
+		console.debug('Using test mode:',imageIndex)
+		const selectedImage = eventData.images[imageIndex]
+
+		if (!selectedImage)
+			throw new Errort(`Invalid test mode index: ${imageIndex}`)
+
+		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,selectedImage,number)
+		document.querySelector('#result').src = canvas.toDataURL()
+		return
+	}
+
 	for (const image of eventData.images) {
 		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,image,number)
-
-		if (isTestMode()) {
-			document.querySelector('#result').src = canvas.toDataURL()
-		} else {
-			const filename = `${eventDate.format('YYYY-MM-DD')}-${eventData.type}-${image.file.replace(/\.[^.]+$/,'')}`
-			downloadCanvasImage(canvas,filename,image.format)
-		}
+		const filename = `${eventDate.format('YYYY-MM-DD')}-${eventData.type}-${image.file.replace(/\.[^.]+$/,'')}`
+		downloadCanvasImage(canvas,filename,image.format)
 	}
 }
 
@@ -185,7 +195,14 @@ async function generateImage(eventType,eventDate,startTime,endTime,imageData,num
 }
 
 function isTestMode() {
-	return document.location.search == '?test'
+	return TEST_MODE_REGEX.test(document.location.search)
+}
+
+function getTestModeIndex() {
+	const match = TEST_MODE_REGEX.exec(document.location.search)
+	if (!match)
+		throw new Error('Test mode isn\'t set.')
+	return parseInt(match[1],10)
 }
 
 function downloadCanvasImage(canvas,name,type='jpg') {
