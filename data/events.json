@@ -215,7 +215,7 @@
 		},{
 			"type": "date",
 			"format": "MMM",
-			"color": "#005caf",
+			"color": "#005bad",
 			"font": "72px arial",
 			"allcaps": true,
 			"position": {
@@ -248,7 +248,7 @@
 		},{
 			"type": "date",
 			"format": "MMM",
-			"color": "#005caf",
+			"color": "#005bad",
 			"font": "80px arial",
 			"allcaps": true,
 			"position": {
@@ -281,7 +281,7 @@
 		},{
 			"type": "date",
 			"format": "MMM",
-			"color": "#005caf",
+			"color": "#005bad",
 			"font": "134px arial",
 			"allcaps": true,
 			"position": {
@@ -314,7 +314,7 @@
 		},{
 			"type": "date",
 			"format": "MMM",
-			"color": "#005caf",
+			"color": "#005bad",
 			"font": "35px arial",
 			"allcaps": true,
 			"position": {
