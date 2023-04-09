@@ -42,6 +42,11 @@ body {
 	src: url('fonts/vcr.ttf');
 }
 
+@font-face {
+	font-family: 'halo';
+	src: url('fonts/halo.ttf');
+}
+
 #fontPreloader {
 	font-size: 0;
 	position: absolute;

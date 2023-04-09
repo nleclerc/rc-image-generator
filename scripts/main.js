@@ -28,6 +28,7 @@ const FORMATS = {
 	const startTimeInput = document.querySelector('#startTimeInput')
 	const endTimeInput = document.querySelector('#endTimeInput')
 	const numberInput = document.querySelector('#numberInput')
+	const textInput = document.querySelector('#textInput')
 
 	const generateButton = document.querySelector('#generateButton')
 
@@ -59,11 +60,12 @@ const FORMATS = {
 		const startTime = startTimeInput.value
 		const endTime = endTimeInput.value
 		const number = numberInput.value
-		await generateImages(eventMap[typeSelector.value],eventDate,startTime,endTime,number)
+		const usertext = textInput.value
+		await generateImages(eventMap[typeSelector.value],eventDate,startTime,endTime,number,usertext)
 	})
 })()
 
-async function generateImages(eventData,eventDate,startTime,endTime,number) {
+async function generateImages(eventData,eventDate,startTime,endTime,number,usertext) {
 	console.log('Generating images for:',eventData.type)
 
 	if (isTestMode()) {
@@ -74,20 +76,20 @@ async function generateImages(eventData,eventDate,startTime,endTime,number) {
 		if (!selectedImage)
 			throw new Errort(`Invalid test mode index: ${imageIndex}`)
 
-		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,selectedImage,number)
+		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,selectedImage,number,usertext)
 		document.querySelector('#result').src = canvas.toDataURL()
 		return
 	}
 
 	for (const image of eventData.images) {
-		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,image,number)
+		const canvas = await generateImage(eventData.type,eventDate,startTime,endTime,image,number,usertext)
 		const filename = `${eventDate.format('YYYY-MM-DD')}-${eventData.type}-${image.file.replace(/\.[^.]+$/,'')}`
 		downloadCanvasImage(canvas,filename,image.format)
 	}
 }
 
-async function generateImage(eventType,eventDate,startTime,endTime,imageData,number) {
-	console.log('Generating image:',eventType,eventDate,startTime,endTime,number,imageData)
+async function generateImage(eventType,eventDate,startTime,endTime,imageData,number,usertext) {
+	console.log('Generating image:',eventType,eventDate,startTime,endTime,number,imageData,usertext)
 	const img = await loadImage(`data/${eventType}/${imageData.file}`)
 	console.debug('Image loaded:',img,img.width,img.height)
 
@@ -146,6 +148,11 @@ async function generateImage(eventType,eventDate,startTime,endTime,imageData,num
 			case 'text':
 				console.debug('Processing text:',text)
 				textValue = text.value
+				break
+
+			case 'usertext':
+				console.debug('Processing text:',usertext)
+				textValue = usertext
 				break
 
 			case 'number':
